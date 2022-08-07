@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ru.yurannnzzz.compat.mekatomicsilktouch.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.mekatomicsilktouch.refmap.json",
+  "mixins": [
+    "DisassemblerModeMixin",
+    "ItemAtomicDisassemblerMixin",
+    "ItemStackMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
