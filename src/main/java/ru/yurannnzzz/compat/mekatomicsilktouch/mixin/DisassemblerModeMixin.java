@@ -32,7 +32,7 @@ public abstract class DisassemblerModeMixin {
 
     @Inject(at = @At("TAIL"), method = "<clinit>", remap = false)
     private static void registerExtModes(CallbackInfo ci) {
-        DisassemblerModeExt.SILK_TOUCH = appendExtendedMode("SILK_TOUCH", MekanismLang.MINER_SILK, 20, () -> true, EnumColor.BRIGHT_GREEN, MekanismUtils.getResource(MekanismUtils.ResourceType.GUI, "wrench.png"));
+        DisassemblerModeExt.SILK_TOUCH = appendExtendedMode("SILK_TOUCH", MekanismLang.MINER_SILK, 20, () -> true, EnumColor.BRIGHT_GREEN, MekanismUtils.getResource(MekanismUtils.ResourceType.GUI_RADIAL, "wrench.png"));
     }
 
     @Invoker(value = "<init>", remap = false)
